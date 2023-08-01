@@ -2,7 +2,6 @@ import * as z from 'zod';
 import login from './login';
 import nsPage from './root';
 
-
 export const routes = [
   {
     name: 'login',

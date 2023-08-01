@@ -8,8 +8,7 @@ const PageView = React.lazy(() => import('./_components/page-view'));
 export const Page = () => {
   return (
     <RootLayout>
-      <RootHeader>
-      </RootHeader>
+      <RootHeader />
       <QueryErrorBoundary>
         <SuspenseWithFallback>
           <PageView />
