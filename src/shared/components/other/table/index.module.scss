@@ -1,0 +1,22 @@
+.root {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 100%;
+
+  &_withBorder {
+    border: 1px solid #e0e0e0;
+  }
+
+  &_fixContent {
+    width: min-content;
+    min-width: 500px;
+  }
+
+  &_isLoading {
+    position: relative;
+  }
+}
+
+.fixedLayout {
+  table-layout: fixed;
+}

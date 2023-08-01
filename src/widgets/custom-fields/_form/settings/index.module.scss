@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.header {
+}
+
+.toggles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.secondRow {
+  display: flex;
+  column-gap: 16px;
+}

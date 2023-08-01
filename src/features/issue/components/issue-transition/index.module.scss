@@ -1,0 +1,14 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.box {
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+}

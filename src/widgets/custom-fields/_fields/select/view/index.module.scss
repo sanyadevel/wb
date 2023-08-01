@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.hint {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.variant {
+  display: flex;
+  align-items: center;
+}

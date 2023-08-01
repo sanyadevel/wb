@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.wrapper {
+  flex: auto;
+}

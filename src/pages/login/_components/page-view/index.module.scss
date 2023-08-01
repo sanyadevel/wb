@@ -1,0 +1,72 @@
+.root {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+
+  &_isDesktop {
+    flex-direction: row;
+  }
+}
+
+.formWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 290px;
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 16px;
+  width: 290px;
+}
+
+.sideImageWrap {
+  flex: 2.5;
+
+  &_isTablet {
+    flex: 1;
+  }
+
+  &_isMobile {
+    flex: 1;
+  }
+}
+
+.sideImage {
+  width: 100%;
+  height: 100%;
+  background: url('/static/img/authorization.png') no-repeat;
+  background-position: center;
+  background-size: 581px;
+
+  &_isTablet {
+    background-size: 413px;
+  }
+
+  &_isMobile {
+    background-size: 343px;
+  }
+}
+
+.info {
+  display: flex;
+  flex: 2 1;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+
+  &_isMobile {
+    padding-top: 40px;
+  }
+
+  &_isDesktop {
+    align-items: flex-start;
+    align-items: center;
+  }
+}

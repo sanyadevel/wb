@@ -1,0 +1,25 @@
+.template_repo: &repo
+  project: 'devops/ci/templates'
+  ref: &ci_tmpl_vers 'v3.2.2'
+
+variables:
+  # hold pls
+  CI_TMPL_PROJECT_VERSION: *ci_tmpl_vers
+  ALPINE_VER: "3.15"
+
+  CI_TMPL_HELM_CHART_NAME: common-deploy
+  CI_TMPL_HELM_CHART_VERSION: 2.1.1
+  # list of services for build & deploy
+  CI_TMPL_HELM_RELEASE_NAMES: "frontend-mediabasket"
+  CI_TMPL_HELM_RELEASE_NAMESPACE: media-basket
+  # list of clusters for deploy
+  CI_TMPL_KUBE_CLUSTERS_DEV: "k8s.dldevel"
+  CI_TMPL_KUBE_CLUSTERS_STAGE: "k8s.stage-dp"
+  CI_TMPL_KUBE_CLUSTERS_PROD: "k8s.prod-dp,k8s.prod-dl"
+  CI_CHECK: "false"
+
+  # harbor project name
+  REGISTRY_PROJECT: "infrastructure"
+
+include:
+  - {<<: *repo, file: /pipelines/universal.yml}

@@ -1,0 +1,18 @@
+# Environment (like as cluster name)
+environment: dldevel
+
+ingress:
+  enabled: true
+  servicePort: 80
+  ingressClassName: {{.Helm.Release.Namespace}}
+  annotations:
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      proxy_set_header X-Resource-Id {{.Helm.Release.Namespace}};
+    nginx.ingress.kubernetes.io/proxy-body-size: 6m
+
+  hosts:
+    - name: {{.Helm.Release.Namespace}}-ingress-controller.{{.Helm.Release.Namespace}}.svc.{{.Helm.Release.Cluster}}
+      path: /
+      servicePort: 80
+      service: frontend
+      tls: false

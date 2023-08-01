@@ -1,0 +1,19 @@
+.root {
+}
+
+.iconBorder {
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.icon {
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+}

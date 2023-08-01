@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  align-items: flex-start;
+  padding: 16px 16px 16px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+

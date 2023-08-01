@@ -1,0 +1,27 @@
+.root {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-template-rows: 1fr;
+  overflow: auto;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  column-gap: 32px;
+  padding-bottom: 32px;
+}
+
+.form {
+  width: 600px;
+}
+
+.breadcrumbs {
+  width: 100%;
+  padding: 8px;
+}

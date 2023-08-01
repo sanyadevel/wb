@@ -1,0 +1,10 @@
+config:
+  path: /usr/share/nginx/html/web-manifest.js
+  subpath: web-manifest.js
+  data: |-
+    window.WEB_MANIFEST = {
+      "title": "Service Desk",
+      "theme": "default",
+      "deploy": "prod-dl",
+      "debug": false
+    }

@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  &_isDragging {
+    opacity: 0.5;
+  }
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dragHandle {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: grab;
+
+  &_isDragging {
+    cursor: move;
+  }
+
+  opacity: 0;
+  &_visible {
+    opacity: 1;
+  }
+}

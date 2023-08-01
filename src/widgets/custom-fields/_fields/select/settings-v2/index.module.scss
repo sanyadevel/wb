@@ -1,0 +1,17 @@
+.root {
+}
+
+.controls {
+  padding-left: 18px;
+}
+
+.variants {
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}

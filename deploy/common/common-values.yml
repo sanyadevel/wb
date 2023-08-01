@@ -1,0 +1,45 @@
+replicaCount: 1
+
+image:
+  repository: {{.Helm.Release.Image}}
+  tag: {{.Helm.Release.Tag}}
+  pullPolicy: IfNotPresent
+
+# # Set imagePullSecrets if exist
+imagePullSecrets:
+  - name: gitlab-registry-secret
+  - name: harbor-registry-secret
+
+resources:
+  requests:
+    memory: '150Mi'
+    cpu: '50m'
+  limits:
+    memory: '200Mi'
+    cpu: '100m'
+
+ports:
+  - name: http
+    containerPort: 80
+    protocol: TCP
+  - name: https
+    containerPort: 443
+    protocol: TCP
+
+service:
+  type: NodePort # Обязательный параметр для новых кластеров
+  externalTrafficPolicy: Local # Обязательный параметр для новых кластеров
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+    - port: 443
+      targetPort: 443
+      protocol: TCP
+      name: https
+
+# Здесь можно добавить переменные окружения, которые можно использовать при запуске докеробраза
+# env:
+#  RELEASE_CLUSTER: {{.Helm.Release.Cluster}}
+#  RELEASE_NAMESPACE: {{.Helm.Release.Namespace}}

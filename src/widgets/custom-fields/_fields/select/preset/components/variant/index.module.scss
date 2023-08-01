@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.number {
+  padding: 4px 8px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  flex: auto;
+}

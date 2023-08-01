@@ -1,0 +1,13 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.actionWrap {
+  display: flex;
+  gap: 4px;
+  padding-top: 16px;
+}

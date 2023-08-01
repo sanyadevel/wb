@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  min-width: 110px;
+  width: inherit;
+}
+
+.outline {
+  width: 100%;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  z-index: 1;
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+}

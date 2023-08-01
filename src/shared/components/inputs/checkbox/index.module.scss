@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}

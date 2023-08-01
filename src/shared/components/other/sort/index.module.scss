@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  column-gap: 8px;
+  height: 24px;
+  align-items: center;
+}
+
+.icon {
+  &_open {
+    transform: rotate(180deg);
+  }
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  width: 100%;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  row-gap: 2px;
+}
+
+.inputWrapper {
+  padding-bottom: 8px;
+}
+
+.sortIcon {
+  &_asc {
+    transform: scaleY(-1);
+  }
+}
+
+.searchResult {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.buttonWrapper {
+  padding: 3px;
+}

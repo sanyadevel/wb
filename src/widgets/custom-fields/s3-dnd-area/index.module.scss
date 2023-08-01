@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.dndArea {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.wrapper {
+  flex: auto;
+}
+
+.previewList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  background-color: #eeeeee;
+}
