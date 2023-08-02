@@ -14,10 +14,10 @@ ingress:
     - name: {{.Helm.Release.Namespace}}-ingress-controller.{{.Helm.Release.Namespace}}.svc.{{.Helm.Release.Cluster}}
       path: /
       servicePort: 80
-      service: frontend
+      service: frontend-mediabasket
       tls: false
     - name: sd2-stage.wb.ru
       path: /
       servicePort: 80
-      service: frontend
+      service: frontend-mediabasket
       tls: false
