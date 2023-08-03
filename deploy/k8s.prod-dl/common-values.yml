@@ -16,7 +16,7 @@ ingress:
       servicePort: 80
       service: frontend-mediabasket
       tls: false
-    - name: sd2.wb.ru
+    - name: basket.wb.ru
       path: /
       servicePort: 80
       service: frontend-mediabasket
