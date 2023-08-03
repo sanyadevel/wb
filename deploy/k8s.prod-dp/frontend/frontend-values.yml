@@ -3,7 +3,7 @@ config:
   subpath: web-manifest.js
   data: |-
     window.WEB_MANIFEST = {
-      "title": "Service Desk",
+      "title": "media-basket",
       "theme": "default",
       "deploy": "prod-dp",
       "debug": false
